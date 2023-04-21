@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
         Vector2 dirVec = target.position - rigid.position;
         Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
-        // rigid.velocity = Vector2.zero;
+        rigid.velocity = Vector2.zero;
     }
 
     private void LateUpdate()
@@ -35,5 +35,10 @@ public class Enemy : MonoBehaviour
             return;
 
         spriter.flipX = target.position.x < rigid.position.x;
+    }
+
+    private void OnEnable()
+    {
+        target = GameManager.instance.player.GetComponent<Rigidbody2D>();
     }
 }
