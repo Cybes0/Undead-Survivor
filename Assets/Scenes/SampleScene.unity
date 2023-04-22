@@ -4553,7 +4553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 4001521062098004673, guid: a85255dadeafe4bd289bb97789c06c5a, type: 3}
   - {fileID: 3923650621706768740, guid: e6f946ce0c9884b60974e14c78059a95, type: 3}
 --- !u!4 &417380496
 Transform:
@@ -5076,7 +5075,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.9444447
+  orthographic size: 8.791667
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5318,6 +5317,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: []
+  spawnData:
+  - spawnTime: 0.7
+    spriteType: 0
+    health: 10
+    speed: 1.5
+  - spawnTime: 0.2
+    spriteType: 1
+    health: 15
+    speed: 2.4
 --- !u!1 &578896224
 GameObject:
   m_ObjectHideFlags: 0
@@ -14599,6 +14607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a35ccff3b054148be4aaa7845334fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTime: 0
+  maxGameTime: 20
   pool: {fileID: 417380495}
   player: {fileID: 444988366}
 --- !u!4 &2037659056
