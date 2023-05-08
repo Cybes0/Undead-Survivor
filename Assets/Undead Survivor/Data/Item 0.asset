@@ -15,7 +15,9 @@ MonoBehaviour:
   itemType: 0
   itemId: 0
   itemName: Shovel
-  itemDesc: 
+  itemDesc: '{0}% increase damage
+
+    Add {1} object(s)'
   itemIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 4.5
   baseCount: 3

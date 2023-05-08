@@ -15,7 +15,9 @@ MonoBehaviour:
   itemType: 1
   itemId: 1
   itemName: Hunting Gun
-  itemDesc: 
+  itemDesc: '{0}% increase damage
+
+    Increase Penetration by {1}'
   itemIcon: {fileID: -205726582, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 3
   baseCount: 0
